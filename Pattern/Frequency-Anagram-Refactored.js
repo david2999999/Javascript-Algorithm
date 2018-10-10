@@ -8,7 +8,7 @@ function validAnagram(first, second) {
     }
 
     for (let letter of second) {
-        if (!lookup[letter]) return false;
+        if (!lookup[letter] || lookup[letter] === 0) return false;
         else lookup[letter] -= 1;
     }
 
