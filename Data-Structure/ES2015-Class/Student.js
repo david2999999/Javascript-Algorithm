@@ -24,6 +24,10 @@ class Student {
         let sum = this.scores.reduce((a, b) => a + b);
         return sum / this.scores.length;
     }
+
+    static EnrollStudents(...students) {
+        return "Enrolling students";
+    }
 }
 
 let firstStudent = new Student("Dav", "Qwe");
