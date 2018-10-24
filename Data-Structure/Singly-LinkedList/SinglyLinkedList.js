@@ -18,6 +18,37 @@ class SinglyLinkedList{
         this.length++;
         return this;
     }
+
+    pop() {
+        if (!this.head) return undefined;
+        let current = this.head;
+        let newTail = current;
+        
+        while (current.next) {
+             newTail = current;
+             current = current.next;
+        }
+
+        this.tail = newTail;
+        this.tail.next = null;
+        this.length--;
+
+        if (this.length === 0) {
+            this.tail = null;
+            this.head = null;
+        }
+
+        return current;
+    }
+
+
+    traverse() {
+        let current = this.head;
+        while (current) {
+            console.log(current.val);
+            current = current.next;
+        }
+    }
 }
 
 class Node {
@@ -30,4 +61,4 @@ class Node {
 let list = new SinglyLinkedList();
 list.push("Hi");
 list.push("hello");
-console.log(list);
+list.traverse();
