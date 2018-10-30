@@ -13,7 +13,7 @@ class DoublyLinkedList{
         this.length = 0;
     }
     push(val){
-        var node = new Node(val);
+        let node = new Node(val);
         if (this.head === null) {
             this.head = node;
             this.tail = this.head;
