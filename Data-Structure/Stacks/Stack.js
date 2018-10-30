@@ -1,19 +1,47 @@
-let stack = [];
+class Node {
+    constructor(val) {
+        this.value = val;
+        this.next = null;
+    }
+}
 
-stack.push("google");
-stack.push("instagram");
-stack.push("youtube");
+class Stack {
+    constructor() {
+        this.first = null;
+        this.last = null;
+        this.size = 0;
+    }
+
+    push(val) {
+        let newNode = new Node(val);
+        if (!this.first) {
+            this.first = newNode;
+            this.last = this.first;
+        } else {
+            let temp = this.first;
+            this.first = newNode;
+            this.first.next = temp;
+        }
+
+        return ++this.size;
+    }
+
+    pop() {
+        if (this.size === 0) return null;
+        let temp = this.first;
+        
+        if (this.first === this.last) {
+            this.last = null;
+        }
+
+        this.first = this.first.next;
+        this.size--;
+        return temp.val;
+    }
+}
+
+let stack = new Stack();
+stack.push(23);
+stack.push(10);
 
 console.log(stack);
-console.log(stack.pop());
-console.log(stack.pop());
-console.log(stack.pop());
-
-stack.unshift("Create new file");
-stack.unshift("Resize file");
-stack.unshift("cloned");
-
-console.log(stack);
-console.log(stack.shift());
-console.log(stack.shift());
-console.log(stack.shift());
