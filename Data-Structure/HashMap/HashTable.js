@@ -36,6 +36,21 @@ class HashTable {
         return undefined;
     }
 
+    keys() {
+        let keysArr = [];
+        for (let i = 0; i < this.keyMap.length; i++) {
+            if (this.keyMap[i]) {
+                for (let j = 0; j < this.keyMap[i].length; j++) {
+                    if (!keysArr.includes(this.keyMap[i][j][0])) {
+                        keysArr.push(this.keyMap[i][j][0]);
+                    }
+                }
+            }
+        }
+
+        return keysArr;
+    }
+
     values() {
         let valueArr = [];
         for (let i = 0; i < this.keyMap.length; i++) {
@@ -64,3 +79,4 @@ ht.set("purple","#DDA0DD");
 ht.set("violet","#DDA0DD");
 
 console.log(ht.values());
+console.log(ht.keys());
