@@ -1,0 +1,10 @@
+Decision Constructs
+    - Allows our program to make decisions on what programming statements to execute based on a boolean expression
+    - The 2 kinds covered here are
+        - 'if' statement
+        - 'switch' statement
+
+    - 'if' statement comes in three forms
+        - 'if'
+        - 'if-else'
+        - 'if-else if'
