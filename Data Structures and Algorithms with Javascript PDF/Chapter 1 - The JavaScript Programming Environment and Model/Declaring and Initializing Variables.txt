@@ -1,0 +1,11 @@
+Declaring and Initializing Variables
+    - Variables are global by default
+        - when a variable is initialized without first being declared, it becomes a global variable
+        - We will follow the convention of declaring variables
+            - This will create variables that are local scope
+    - Use the var keyword followed by a variable name
+        var number;
+        var name;
+        var rate = 1.2;
+        var greeting = "Hello, world!";
+        var flag = false;
