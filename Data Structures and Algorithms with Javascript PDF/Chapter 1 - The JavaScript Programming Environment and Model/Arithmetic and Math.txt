@@ -1,0 +1,22 @@
+Arithmetic and Math Library Functions
+    Standard arithmetic operators:
+        • + (addition)
+        • - (subtraction)
+        • * (multiplication)
+        • / (division)
+        • % (modulo)
+
+    var x = 3;
+    var y = 1.1;
+    print(x + y); -> 4.1
+    print(x * y); -> 3.3000000000000003
+    print((x+y)*(x-y)); -> 7.789999999999999
+    var z = 9;
+    print(Math.sqrt(z)); -> 3
+    print(Math.abs(y/x)); -> 0.3666666666666667
+
+    - We can manually set the precisions of results
+        var x = 3;
+        var y = 1.1;
+        var z = x * y;
+        print(z.toFixed(2)); // displays 3.30
