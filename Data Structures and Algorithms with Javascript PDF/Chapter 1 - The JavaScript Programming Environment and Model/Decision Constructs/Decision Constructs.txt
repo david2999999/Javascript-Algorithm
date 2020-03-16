@@ -8,3 +8,10 @@ Decision Constructs
         - 'if'
         - 'if-else'
         - 'if-else if'
+
+    - 'switch' statement
+        - The switch statement compares the input with all of the 'case' statents
+            - If a 'case' matches the input
+                - The code in the case block will execute
+            - If the case block does not have a 'break' statement
+                - The code right below our case block will also execute
