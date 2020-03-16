@@ -4,3 +4,6 @@ Repetition Constructs
 
 While Loop
     - Executes a set of statements while a condition is true
+
+For Loop
+    - Execute a set of statements a specified number of times
