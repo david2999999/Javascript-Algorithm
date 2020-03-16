@@ -1,0 +1,4 @@
+Functions
+    - There are two types of functions
+        - Value-returning functions
+        - Functions that do not return values (some time called subprocedures and void functions)
