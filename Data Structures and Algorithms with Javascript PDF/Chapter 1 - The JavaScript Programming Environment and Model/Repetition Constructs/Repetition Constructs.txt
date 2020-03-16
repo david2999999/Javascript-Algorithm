@@ -1,0 +1,6 @@
+Repetition Constructs
+    - Many algorithms are repetitive in nature
+    - The two main repetition constructs are 'for' and 'while' loops
+
+While Loop
+    - Executes a set of statements while a condition is true

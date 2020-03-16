@@ -40,5 +40,5 @@ switch (monthNum) {
         monthName = "December";
         break;
     default:
-        print("Bad input");
+        console.log("Bad input");
 }
