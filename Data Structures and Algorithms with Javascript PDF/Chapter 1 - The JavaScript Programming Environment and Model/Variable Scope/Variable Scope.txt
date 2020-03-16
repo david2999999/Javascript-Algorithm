@@ -1,0 +1,7 @@
+Variable Scope
+    - The scope of a variable refers to where in a program a variable's value can be accessed.
+        - The scope of a variable declared inside a function is called the function scope
+            - The variable's value is visible within the function definition where the variable is declared and defined
+            - The variable is also visible within any functions that are nested within that function
+        - The scope of a variable declared outside of a function is called the global scope
+            - which means its value can be accessed by any part of a program including functions
