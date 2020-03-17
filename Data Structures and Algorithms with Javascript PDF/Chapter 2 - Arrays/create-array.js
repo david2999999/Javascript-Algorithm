@@ -21,3 +21,13 @@ console.log(numbers4.length); // displays 5
 // Lastly, you can create an array by calling the Array constructor with a single argument specifying the length of the array
 var numbers5 = new Array(10);
 console.log(numbers5.length); // displays 10
+
+
+// Elements inside the array does not have to be the same type
+var objects = [1, "Joe", true, null];
+
+// We can verify that an object is an array by calling the Array.isArray() function
+var numbers = 3;
+var arr = [7,4,1776];
+console.log(Array.isArray(number)); // displays false
+console.log(Array.isArray(arr)); // displays true
