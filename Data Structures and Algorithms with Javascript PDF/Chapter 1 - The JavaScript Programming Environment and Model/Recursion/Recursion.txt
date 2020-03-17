@@ -1,0 +1,5 @@
+Recursion
+    - When a function is called recursively, the results of the function's computation are temporarily suspended while the recursion is in progress
+    - JS is capable of handling fairly deep recursive calls,
+        - When an algorithm requires a deeper recursive call than JS can handle, we will pursue an iterative solution
+    - Any function that uses recursion and be rewritten in an iterative manner
