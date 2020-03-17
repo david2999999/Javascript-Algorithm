@@ -1,0 +1,5 @@
+Javascript only have global and function scope
+    - It does not support block scope
+    - In other programming languages, you can declare a variable within a block of code and the variable is not accessible outside of that block
+        - Example: when using a 'for' loop in Java or C++
+    - In JS, we pretend like it does have block scope when we write 'for' loops
