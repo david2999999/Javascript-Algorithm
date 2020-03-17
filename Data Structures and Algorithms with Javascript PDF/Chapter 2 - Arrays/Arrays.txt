@@ -5,3 +5,8 @@ Arrays
         - When integers are used for indices, they are converted to strings internally in order to conform to the requirements for JS objects
         - Since JS arrays are just objects, they are not quite as efficient as the arrays of other programming languages
     - The Array is one of the recognized JS object types, and there is a set of properties and functions you can use with arrays
+
+Using Arrays
+    - Arrays in JS are very flexible
+        - There are many ways to create arrays, access array elements and perform task such as searching and sorting the elements
+        - JS 1.5 allows developers to work with arrays using functional programming techniques
