@@ -25,3 +25,8 @@ scope = "global";
 console.log(scope); // displays "global"
 console.log(showScope()); // displays "local"
 console.log(scope); // displays "local"
+
+// The scope variable defined inside the keyword is not declared with the 'var' keyword
+    // When the string 'local' is assigned to the variable
+        // We are actually changing the value of the 'scope' variable in the main program
+        // you should always begin every definition of a variable with the 'var' keyword to keep things like this from happening
