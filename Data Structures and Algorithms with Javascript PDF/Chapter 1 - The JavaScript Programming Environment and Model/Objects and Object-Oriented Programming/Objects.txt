@@ -1,0 +1,5 @@
+Objects
+    - Objects are created by defining a constructor function that includes declarations for an object's properties and functions
+        - Followed by definitions for the functions
+
+    - The 'this' keyword is used to tie each function and property to an object instance.
