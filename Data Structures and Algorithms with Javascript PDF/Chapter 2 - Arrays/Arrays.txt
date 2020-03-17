@@ -1,0 +1,7 @@
+Arrays
+    - A linear collection of elements, where the elements can be accessed via indices
+        - The indices are usually integers used to compute offsets
+    - The array used in JS is actually a specialized type of object, with indices being property names that can be integers used to represent offsets
+        - When integers are used for indices, they are converted to strings internally in order to conform to the requirements for JS objects
+        - Since JS arrays are just objects, they are not quite as efficient as the arrays of other programming languages
+    - The Array is one of the recognized JS object types, and there is a set of properties and functions you can use with arrays
