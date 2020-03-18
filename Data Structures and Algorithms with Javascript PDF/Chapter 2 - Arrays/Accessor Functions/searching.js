@@ -13,3 +13,14 @@ if (position >= 0) {
 } else {
     console.log(name + " not found in array.");
 }
+
+// if you have multiple occurrence of the same data in an array, the indexOf() function will always return the position of the first occurrence
+    // There is another similar function, 'lastIndexOf()', which returns the position of the last occurrence of the argument in an array, or -1 if not found
+var names2 = ["David", "Mike", "Cynthia", "Raymond", "Clayton", "Mike", "Jennifer"];
+var name2 = "Mike";
+
+var firstPos = names.indexOf(name2);
+console.log("First found " + name2 + " at position " + firstPos);
+
+var lastPos = names.lastIndexOf(name2);
+console.log("Last found " + name2 + " at position " + lastPos);
