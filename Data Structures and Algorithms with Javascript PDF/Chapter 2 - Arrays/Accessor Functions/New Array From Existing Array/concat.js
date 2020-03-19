@@ -11,3 +11,4 @@ console.log(itDiv); // Mike,Clayton,Terrill,Danny,Jennifer,Raymond,Cynthia,Bryan
 
 itDiv = dmpDept.concat(cisDept);
 console.log(itDiv); // Raymond,Cynthia,Bryan,Mike,Clayton,Terrill,Danny,Jennifer
+
