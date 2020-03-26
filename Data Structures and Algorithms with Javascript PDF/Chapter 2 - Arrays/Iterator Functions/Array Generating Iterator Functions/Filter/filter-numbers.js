@@ -11,7 +11,7 @@ function isOdd(num) {
 
 var nums = [];
 for (var i = 0; i < 20; ++i) {
-    nums[i] = i+1;
+    nums[i] = i + 1;
 }
 
 var evens = nums.filter(isEven);
@@ -21,3 +21,20 @@ console.log(evens);
 var odds = nums.filter(isOdd);
 console.log("Odd numbers: ");
 console.log(odds);
+
+// ============================================================
+
+function passing(num) {
+    return num >= 60;
+}
+
+var grades = [];
+for (i = 0; i < 20; ++i) {
+    grades[i] = Math.floor(Math.random() * 101);
+}
+
+var passGrades = grades.filter(passing);
+console.log("All grades: ");
+console.log(grades);
+console.log("Passing grades: ");
+console.log(passGrades);
