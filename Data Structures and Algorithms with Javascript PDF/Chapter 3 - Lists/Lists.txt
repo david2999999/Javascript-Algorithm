@@ -1,0 +1,13 @@
+Lists
+    - List are especially useful if we don't have to perform searches on the items in the list or put them
+      in some type of sorted order
+    - An ordered sequence of data, and each data item stored in a list is called element
+        - The elements can be of any data type
+    - There are no predetermined number of elements that can be stored in a list, although the practical limit
+      will be the amount of memoy available to the program using the list
+    - A list with no elements is an empty list
+        - The number of elements stored in a list is called the length of the list
+            - The number of elements is kept in a 'listSize' variable inside of the list ADT
+    - List have properties to describe location
+        - Front of a list and the end of a list
+            - next(), prev(), moveTo(n) operations allows us to traverse the list
