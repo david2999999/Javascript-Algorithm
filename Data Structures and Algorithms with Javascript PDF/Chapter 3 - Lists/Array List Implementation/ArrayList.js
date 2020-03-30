@@ -52,6 +52,20 @@ function remove(element) {
     return false;
 }
 
+function contains(element) {
+    return find(element) > -1;
+}
+
+// clears our all elements of a list and allow new elements to be entered
+// We use the delete operator to delete the data store array
+    // We will then create an empty datastore and set our list/position to 0 to indicate
+    // the start of the array
+function clear() {
+    delete this.dataStore;
+    this.dataStore = [];
+    this.listSize = this.pos = 0;
+}
+
 // Iterate through our array to find the element's index
 function find(element) {
     for (var i = 0; i < this.dataStore.length; i++) {
@@ -70,11 +84,54 @@ function toString() {
     return this.dataStore;
 }
 
-var names = new ArrayList();
-names.append("Cynthia");
-names.append("Raymond");
-names.append("Barbara");
-console.log(names.toString());
+// traversing a list
+function front() {
+    this.pos = 0;
+}
 
-names.remove("Raymond");
-console.log(names.toString());
+function end() {
+    this.pos = this.listSize - 1;
+}
+
+function prev() {
+    if (this.pos > 0) {
+        --this.pos;
+    }
+}
+
+function next() {
+    if (this.pos < this.listSize - 1) {
+        ++this.pos;
+    }
+}
+
+function currPos() {
+    return this.pos;
+}
+
+function moveTo(postion) {
+    this.pos = postion;
+}
+
+function getElement() {
+    return this.dataStore[this.pos];
+}
+
+var names = new ArrayList();
+names.append("Clayton");
+names.append("Raymond");
+names.append("Cynthia");
+names.append("Jennifer");
+names.append("Bryan");
+names.append("Danny");
+
+names.front();
+console.log(names.getElement()); // displays Clayton
+
+names.next();
+console.log(names.getElement()); // displays Raymond
+
+names.next();
+names.next();
+names.prev();
+console.log(names.getElement()); // displays Cynthia
