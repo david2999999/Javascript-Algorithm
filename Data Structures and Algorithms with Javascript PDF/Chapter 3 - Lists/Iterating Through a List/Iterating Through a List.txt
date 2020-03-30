@@ -1,0 +1,9 @@
+Using Iterator to Iterate through a list
+    - Iterator allows us to traverse a list without referencing the internal storage mechanism of the list
+    - The functions front(), end(), prev(), next() and currPos provide an implementation of an iterator for our list class
+    - The advantages of using iterators over using array indexing includes
+        - Not having to worry about the underlying data structure when accessing list elements
+            - The user does not need to know that we used an array implementation for a list
+        - Being able to update the list and not having to update the iterator, where an index becomes invalid
+          when a new element is added to the list
+        - Uniform way to access elements for different types of data stores used in the implementation of a List class
