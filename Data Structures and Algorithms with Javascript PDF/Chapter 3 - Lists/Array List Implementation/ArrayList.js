@@ -26,14 +26,19 @@ function append(element) {
     this.dataStore[this.listSize++] = element;
 }
 
-// Iterate through our array to find the element's index
-function find(element) {
-    for (var i = 0; i < this.dataStore.length; i++) {
-        if (this.dataStore[i] === element) {
-            return i;
-        }
+// an insertion functions needs to know where to insert an element
+// We first find the index position of the element 'after'
+    // if the element does exist (index != -1)
+        // Then we will add the new element to (index + 1) using the splice method
+function insert(element, after) {
+    var insertPosition = this.find(after);
+    if (insertPosition > -1) {
+        this.dataStore.splice(insertPosition + 1, 0, element);
+        ++this.listSize;
+        return true;
     }
-    return -1;
+
+    return false;
 }
 
 function remove(element) {
@@ -47,4 +52,29 @@ function remove(element) {
     return false;
 }
 
+// Iterate through our array to find the element's index
+function find(element) {
+    for (var i = 0; i < this.dataStore.length; i++) {
+        if (this.dataStore[i] === element) {
+            return i;
+        }
+    }
+    return -1;
+}
 
+function length() {
+    return this.listSize;
+}
+
+function toString() {
+    return this.dataStore;
+}
+
+var names = new ArrayList();
+names.append("Cynthia");
+names.append("Raymond");
+names.append("Barbara");
+console.log(names.toString());
+
+names.remove("Raymond");
+console.log(names.toString());
