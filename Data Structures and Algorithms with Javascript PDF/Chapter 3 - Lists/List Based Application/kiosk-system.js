@@ -15,3 +15,20 @@ function createArr(file) {
     }
     return arr;
 }
+
+// For each of the objects in the list, we use the instanceof operator to test whether the object is
+// a Customer object. If so, we retrieve the name and the movie the customer has checked our using each of the
+// two properties as an index for retrieving the associated value
+function displayList(list) {
+    for (list.front(); list.currPos() < list.length(); list.next()) {
+        if (list.getElement() instanceof Customer) {
+            console.log(list.getElement()["name"] + ", " + list.getElement()["movie"]);
+        }
+        console.log(list.getElement());
+    }
+}
+
+function Customer(name, movie) {
+    this.name = name;
+    this.movie = movie;
+}
