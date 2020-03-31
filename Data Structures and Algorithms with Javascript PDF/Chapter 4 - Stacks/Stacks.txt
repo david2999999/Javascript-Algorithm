@@ -1,0 +1,13 @@
+Stacks
+    - A list of elements that are only accessible only from one end of the list
+        - which is called the top
+    - A common real world example of a stack is the stack of trays at a cafeteria
+        - Trays are removed from the top, and when trays are put back on the stack after
+          they are washed, they are placed on the top of the stack
+    - This ordering is known as last-in, first-out (LIFO)
+        - Due to this ordering, any element that is not currently at the top of the stack can not
+          be accessed
+        - To get the element at the bottom of the stack, you have to dispose of all elements above it first
+    - Two basic operations of the stack are
+        - Push - adding element
+        - Pop - remove element
