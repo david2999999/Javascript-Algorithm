@@ -1,8 +1,24 @@
+var customers = new List();
 var movies = createArr('films.txt');
-
 var movieList = new List();
 for (var i = 0; i < movies.length; i++) {
     movieList.append(movies[i]);
+}
+
+console.log("Available movies: \n");
+displayList(movieList);
+checkOut("Jane Doe", "The Godfather", movieList, customers);
+console.log("\nCustomer Rentals: \n");
+displayList(customers);
+
+function checkOut(name, movie, filmList, customerList) {
+    if (movieList.contains(movie)) {
+        var customer = new Customer(name, movie);
+        customerList.append(customer);
+        filmList.remove(movie);
+    } else {
+        console.log(movie + " is not available");
+    }
 }
 
 // When the elements of the text file are split into the array,
