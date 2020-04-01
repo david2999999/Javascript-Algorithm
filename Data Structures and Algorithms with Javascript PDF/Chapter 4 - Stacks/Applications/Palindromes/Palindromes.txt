@@ -1,0 +1,7 @@
+Palindrome
+    - A word, phrase or number that is spelled the same forward and backward
+    - We can use a stack to determine whether or not a given string is a palindrome
+        - We take the original string and push each character onto a stack, moving left to right
+        - When the end of the string is reached, the stack contains the original string in reverse order
+            - We then simply compare the original string with the reversed work, and if they are equal, the
+              string is a palindrome
