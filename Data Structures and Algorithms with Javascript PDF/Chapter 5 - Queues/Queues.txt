@@ -9,3 +9,13 @@ Queues
 Applications
     - Order processes submitted to an operating system or print spooler
     - Model scenarios such as customers standing in the line at a bank or a grocery store
+
+Operations
+    - Two primary operations involves inserting new element and removing an element from a queue
+        - Insertion operation is called 'enqueue', this inserts a new element at the end of the queue
+        - Removal operation is called 'dequeue', this removes an element from the front of a queue
+    - Another important queue operation is viewing the element at the front of a queue
+        - Peek operation returns the element stored at the front of the queue without removing it from the queue
+    - Other utility methods/properties include
+        - length property
+        - clear() operation
