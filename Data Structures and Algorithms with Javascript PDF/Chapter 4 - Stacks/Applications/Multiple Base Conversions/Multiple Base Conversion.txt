@@ -1,0 +1,8 @@
+Multiple Base Conversion
+    - A stack can be used to convert a number from one base to another base
+        - Given a number, n, which we want to convert to a base, b.
+            - The rightmost digit of n is n % b. Push this digit into the stack
+            - Replace n with n / b
+            - Repeat steps 1 and 2 until n = 0 and there are no significant digits remaining
+            - Build the converted number string by popping the stack until the stack is empty
+        - Note: This algorithm will only work with bases 2 through 9
