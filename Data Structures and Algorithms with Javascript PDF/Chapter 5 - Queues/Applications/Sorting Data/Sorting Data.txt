@@ -1,0 +1,47 @@
+Sorting Data with Queues
+    - Queues can also be used to sort data
+    - In the old days of computing, programs were entered into a mainframe program via punch cards
+        - Each of the card holds a single program statement
+        - The cards were sorting using a mechanical sorter that utilized bin-link structures to hold
+          cards
+    - We can simulate this process by using a set of queues
+        - This sorting technique is called a radix sort
+            - It is not the fastest of sorting algorithms but it demonstrate an interesting use of queues
+    - The radix sort works by making two passes over a data set
+        - Our data set in this case is a set of integers from 0 to 99
+        - The first pass sorts the numbers based on the 1s digit
+        - Then second pass sorts the number based on the 10s digit
+            - Each number is placed in a bin based on the digit in each of these 2 places
+            - Example: 91, 46, 85, 15, 92, 35, 31, 22
+                - The first pass of the radix sort results in the configuration
+                    Bin 0:
+                    Bin 1: 91, 31
+                    Bin 2: 92, 22
+                    Bin 3:
+                    Bin 4:
+                    Bin 5: 85, 15, 35
+                    Bin 6: 46
+                    Bin 7:
+                    Bin 8:
+                    Bin 9:
+                - The numbers are not sorted based on which bin they are in:
+                    91, 31, 92, 22, 85, 15, 35, 46
+                - Then second pass sorts by the 10s digit into the appropriate bins
+                    Bin 0:
+                    Bin 1: 15
+                    Bin 2: 22
+                    Bin 3: 31, 35
+                    Bin 4: 46
+                    Bin 5:
+                    Bin 6:
+                    Bin 7:
+                    Bin 8: 85
+                    Bin 9: 91, 92
+                - If we take our all the numbers from our bins and put them back in a list, we have
+                    15, 22, 31, 35, 46, 85, 91, 92
+    - We can implement this algorithm by using a queue to represent bins
+        - We need 9 queues, one for each digit
+        - All the queues will be stored in an array
+    - We use the modulus and integer division to determine the 1s and 10s digit
+    - The Algorithm entails adding numbers to their approapriate queue, taking the numbers our of the queues to
+      resort them based on the 1s digit, and then repeating the process for the 10s digit
