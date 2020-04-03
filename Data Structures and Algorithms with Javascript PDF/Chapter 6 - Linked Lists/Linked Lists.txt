@@ -1,4 +1,9 @@
 Linked Lists
+    - When the operations performed on an array is too slow for practical use, we can consider
+      using linkedlist as an alternative data structure
+    - The linked list can be used in almost every situation where a one-dimensional array is used,
+      except for the case of random access
+        - When random access is required, an array is the better data structure use
 
 Shortcoming of Arrays
     - In many programming languages, arrays are fixed in length, so it is hard to add new data
