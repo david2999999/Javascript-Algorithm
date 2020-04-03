@@ -43,5 +43,7 @@ for (var i = 0; i < 10; ++i) {
 console.log("Before radix sort: ");
 dispArray(nums);
 
+radixSort(nums);
+
 console.log("\nAfter radix sort: ");
 dispArray(nums);

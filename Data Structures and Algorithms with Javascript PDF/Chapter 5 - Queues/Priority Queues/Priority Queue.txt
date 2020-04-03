@@ -1,0 +1,13 @@
+Priority Queue
+    - In normal queue operations, when an element is removed from a queue, the element is always
+      the first element that was inserted into the queue
+    - There are certain situations, where the elements removed in an order other than first-in, first-out
+        - We need to create a data structure called a priority queue
+        - Each of the elemnts are removed from the queue based on a priority constraint
+    - For example:
+        - Waiting room at a hospital's emergency department (ED) operates using a priority queue
+            - When a patient enters the ED, he or she is sheen by a nurse
+                - This nurse's job is to assess the severity of the patient's condition and assign a
+                  priority code to the patient
+                - Patients with a high priority code are seen before patients with a lower priority code
+                - Patients that have the same priority code are seen on a first-come, first-served basis
