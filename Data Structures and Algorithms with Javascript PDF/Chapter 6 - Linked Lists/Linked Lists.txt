@@ -1,16 +1,20 @@
 Linked Lists
-    - When the operations performed on an array is too slow for practical use, we can consider
-      using linkedlist as an alternative data structure
-    - The linked list can be used in almost every situation where a one-dimensional array is used,
-      except for the case of random access
-        - When random access is required, an array is the better data structure use
-
-Shortcoming of Arrays
-    - In many programming languages, arrays are fixed in length, so it is hard to add new data
-      when the last element of the array is reached
-    - Adding and removing data from an array is also difficult because you have to move array elements
-      up or down to reflect either an addition or a deletion
-        - these problems do not come up with Javascript arrays, since we an use the split() function
-          without having to perform additional array element access
-    - The main problem with JS arrays is that the array are implemented as objects, causing them to be
-      less efficient than arrays built in languages such as C++ and Java
+    - The linked list is a collection of objects called nodes
+        - Each node is linked to a successor node in the list using an object reference
+        - The reference to another node is called a link
+    - While array elements are referenced by their position, linked list elements are
+      referenced by their relationship to the other elements in the linked list
+    - Iterating through a linked list involves following the links of the list from the beginning
+      node to the end node
+        - The node at the end of the linked list points to a null node
+    - Many linked-list implementations include a special node, called the header or head node, to
+      denote the beginning of a linked list
+    - Inserting a new node into a linked list is a very efficient task
+        - The linked of the node before the inserted node (the previous node) is changed to
+          point to the new node
+            - The new node's link is set to the node the previous node was pointing to before the
+              insertion
+    - Removing an item from a linked list is also efficient
+        - The link of the node before the removed node is redirected to point to the node the removed
+          node is point to, while also pointing the removed null to null
+          - This will effectively take out the node out of the linked list
