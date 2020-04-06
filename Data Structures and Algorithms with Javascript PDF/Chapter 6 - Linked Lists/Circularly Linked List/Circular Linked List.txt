@@ -1,0 +1,9 @@
+Circular Linked List
+    - Circular Linked List is similar to a single linked list and has the same type of nodes
+    - The difference is that a circular linked list, when created, has its head node's next
+      property point back to itself
+        - Example: head.next = head
+    - This property of pointing back to head node is propagated throughout the circular linked list,
+      so that every new node has its next property pointing to the head of the list
+    - The reason behind creating a circularly linked list is the ability to go backward through a
+      list but without the extra overhead of creating a doubly linked list
