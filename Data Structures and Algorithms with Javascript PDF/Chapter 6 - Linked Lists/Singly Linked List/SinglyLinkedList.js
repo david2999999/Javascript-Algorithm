@@ -1,4 +1,4 @@
-function LinkedList() {
+function SinglyLinkedList() {
     this.head = new Node("head");
     this.find = find;
     this.insert = insert;
