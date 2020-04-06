@@ -1,0 +1,8 @@
+Doubly Linked List
+    - It is straightforward to traverse a linked list from the first node to the last node
+        - But it is not as easy to traverse a singly linked list backwards
+    - We can add another property to the Node class that stores a link to the previous node
+    - When we insert a node into the list, we will have to perform more operations to assign the
+      proper links for the next and previous nodes
+        - But, we have gained efficiency when we have to remove a node from the list,
+          since we no longer have to search for the previous node

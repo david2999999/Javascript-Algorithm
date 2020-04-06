@@ -20,8 +20,11 @@ function find(item) {
 function insert(newElement, item) {
     var newNode = new Node(newElement);
     var current = this.find(item);
-    newNode.next = current.next;
-    current.next = newNode;
+
+    if (current != null) {
+        newNode.next = current.next;
+        current.next = newNode;
+    }
 }
 
 function display() {
