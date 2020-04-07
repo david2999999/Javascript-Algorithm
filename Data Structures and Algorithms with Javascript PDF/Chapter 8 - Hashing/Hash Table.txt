@@ -1,0 +1,14 @@
+Hash Table
+    - Data structure is designed around an array
+        - The array consists of elements 0 through some predetermined size
+        - We can increase the size when necessary
+    - Each data element is stored in the array is based on an associated data element
+      called the key
+        - This is very similar to the ceoncept of the key in the Dictionary data structure
+        - To store the piece of data in a hash table
+            - The key is mapped into a number in the range of 0 through the hash table size, using
+              a hash function
+    - Ideally, the hash function stores each key in its own array element
+        - But, there are unlimited number of possible keys and a limited number of array elements
+        - The realistic goal of the hash function is to attempt to distribute the keys as evenly as possible
+          among the elements of the array
