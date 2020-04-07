@@ -4,6 +4,8 @@ function Dictionary() {
     this.find = find;
     this.remove = remove;
     this.showAll = showAll;
+    this.count = count;
+    this.clear = clear;
 }
 
 function add(key, value) {
@@ -22,4 +24,16 @@ function showAll() {
     for (var key in Object.keys(this.dataStore)) {
         console.log(key + " -> " + this.dataStore[key]);
     }
+}
+
+function count() {
+    var n = 0;
+    for (var key in Object.keys(this.dataStore)) {
+        n++;
+    }
+    return n;
+}
+
+function clear() {
+    this.dataStore = new Array();
 }
