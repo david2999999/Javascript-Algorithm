@@ -1,0 +1,14 @@
+Dictionaries
+    - Data structure that stores data as key-value pairs
+        - Example: Phone book store its data as names and phone numbers
+            - When we look for a phone number, we first search for the name
+            - When we find the name, the phone number is found right next to the name
+        - The key is the element you use to perform a search
+        - The value is the result of the search
+    - Javascript's Object class is designed to operate as a dictionary
+    - We will use the features of the Object class to build a Dictionary class that simplified working
+      with a dictionary-type object
+        - Creating a Dictionary class allows encapsulation, such as the advantage of being able to
+          define functions for performing collective operations
+            - Such as displaying all entries in a dictionary, rather than having to write loops
+              in the main program to perform the same operation
