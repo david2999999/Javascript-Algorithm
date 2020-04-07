@@ -12,3 +12,13 @@ Hash Table
         - But, there are unlimited number of possible keys and a limited number of array elements
         - The realistic goal of the hash function is to attempt to distribute the keys as evenly as possible
           among the elements of the array
+    - What should be the predetermined size of the HashTable?
+        - One constraint usually placed on the array size is that it should be a prime number
+            - This number will be relevant when we go into describing different hash functions
+            - The strategies involving determining the correct array size are based on technique used to handle
+              collisions
+
+Collisions
+    - Even with an efficient hash function, it is possible for two keys to hash to the same value
+        - This is called a collision, and we need a strategy for handling collisions when they occur
+
