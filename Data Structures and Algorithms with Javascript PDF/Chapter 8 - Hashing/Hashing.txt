@@ -1,0 +1,6 @@
+Hashing
+    - Common technique for storing data in such a way that the data can be inserted and retrieved
+      very quickly
+    - Used in a data structure called a hash table
+        - Fast insertion, deletion and retrieval
+        - Slow searching, such as finding the minimum and maximum value in a dataset
