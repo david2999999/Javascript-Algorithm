@@ -1,13 +1,14 @@
 function HashTable() {
     this.table = new Array(137);
     this.simpleHash = simpleHash;
+    this.betterHash = betterHash;
     this.showDistro = showDistro;
     this.put = put;
     this.get = get;
 }
 
 function put(data) {
-    var pos = this.simpleHash(data);
+    var pos = this.betterHash(data);
     this.table[pos] = data;
 }
 
@@ -25,4 +26,16 @@ function showDistro() {
             console.log(i + ": " + this.table[i]);
         }
     }
+}
+
+function betterHash(string, arr) {
+    const prime = 37;
+    var total = 0;
+
+    for (var i = 0; i < string.length; i++) {
+        total += prime * total + string.charCodeAt(i);
+    }
+
+    total = total % arr.length;
+    return total;
 }
