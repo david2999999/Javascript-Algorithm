@@ -1,0 +1,9 @@
+Hash Functions
+    - The choice of hash function depends on the data type of the key
+        - if the key is an integer, then the simplest hash function is to return the key
+           modulo the size of the array
+           - There are circumstances when this function is not recommended, such as when all of the keys
+             ends in 0 and the array size is 10
+                - This is one reason the array size should always be a prime number
+           - If the keys are random integers, this hash function should more evenly distribute the keys
+           - This type of hashing is also known as modular hashing
