@@ -1,0 +1,8 @@
+Collisions
+    - To avoid collisions, we first need to make sure the array that we are using is sized to a prime number
+        - This is necessary due to the use of modular arithmetic in computing the key
+        - The size of the array needs to be greater than 100 in order to more evenly disperse the keys in the table
+    - The next approach to avoiding collisions is to compute a better hash value
+        - An algorithm known as the Horner's method
+            - This hash function works by summing the ASCII values of the characters of a string, but it adds
+              a step by multiplying the resulting total by a prime constant
