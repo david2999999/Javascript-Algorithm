@@ -7,3 +7,8 @@ Hash Functions
                 - This is one reason the array size should always be a prime number
            - If the keys are random integers, this hash function should more evenly distribute the keys
            - This type of hashing is also known as modular hashing
+        - If the key is a string, a simple hash function that at first glance to work well is to sum up the
+          ASCII value of the letters in the key
+            - The hash value is then that sum modulo the array size
+            - A problem with this approach is words with the same letters and letter count will map to the same location
+                - Example: 'cat' and 'act'
