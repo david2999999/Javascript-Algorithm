@@ -1,0 +1,15 @@
+Linear Probing
+    - An example of a more general hashing technique called open-addressing hashing
+    - When there is a collision, the program simply looks to see if the next element
+      of the hash table is empty
+        - If the element is not empty, the program continue to search for an empty
+          hash-table element until one is found
+        - This technique makes use of the fact that any hash table is going to have many
+          empty elements and it makes sense to use the space to store keys.
+    - Should be chosen over separate chaining when your array for storing data can be fairly
+      large
+    - The formula commonly used to determine which collision method to use
+        - if the size of the array can be up to half the number of elements to be stored, you
+          should use separate chaining
+        - if the size of the array can be twice the size of the number of elements to be stored,
+          you should use linear probing.
