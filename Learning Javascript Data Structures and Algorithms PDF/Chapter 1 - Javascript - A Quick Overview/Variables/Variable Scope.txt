@@ -1,0 +1,5 @@
+Variable Scope
+    - Scope refers to where in the algorithm we can access the variable (which can also be a function)
+    - There are local and global variables
+        - Global variables in Javascript are evil
+            - Avoid global variables
