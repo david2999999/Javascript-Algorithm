@@ -12,6 +12,10 @@ function put(data) {
     this.table[pos] = data;
 }
 
+function get(key) {
+    return this.table[this.betterHash(key)];
+}
+
 function simpleHash(data) {
     var total = 0;
     for (var i = 0; i < data.length; i++) {
