@@ -1,0 +1,12 @@
+Variables
+    - The available types are numbers, strings, Booleans, functions, and objects
+        - also have undefined and null, along with arrays, dates, and regular expressions
+    - It is not a strongly typed language such as C/C++, C# or Java
+        - In Java, we declare variables along with its type
+        - In Java, we use the keyword var, and do not need to declare the variable type
+    - Since, JS is not strongly typed language, we are able to declare a variable, initialize it
+      with a number and update it with a string or any other datatype
+        - Assigning a value to a variable that is different from its original type is not a good
+          practice
+    - 'null' value means no value
+    - 'undefined' means a variable that has been declared but not yet assigned a value
