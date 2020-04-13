@@ -1,0 +1,7 @@
+Value Type              Result
+undefined               false
+nul                     false
+Boolean                 true is true and false is false
+Number                  The result is false for +0 and -0, or NaN; otherwise, the result is true
+String                  The result is false if the string is empty (length is 0), otherwise true (length > 1)
+Object                  true
