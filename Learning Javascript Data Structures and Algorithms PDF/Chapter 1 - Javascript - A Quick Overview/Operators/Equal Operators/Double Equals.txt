@@ -1,13 +1,31 @@
-When using ==, values can be considered equal even when they are of different types
+- When using ==, values can be considered equal even when they are of different types
+- The following table represents the result when performing equality operations with double equals
+                        Type(x) == Type(y)          -> result
+                        --------------------------------------------------
+                        null == undefined           -> true
+                        undefined == null           -> true
+                        Number == String            -> x == toNumber(y)
+                        String == Number            -> toNumber(x) == y
+                        Boolean == Any              -> toNumber(x) == y
+                        Any == Boolean              -> x == toNumber(y)
+                        String or Number == Object  -> x == toPrimitive(y)
+                        Object == String or Number  -> toPrimitive(x) == y
+                        --------------------------------------------------
 
-The follow table represents the result when performing equality operations with double equals
+- The toNumber() and toPrimitive() methods are internal
+    - toNumber()
+        Value Type                  Result
+        ----------------------------------------------------------------------------------
+        undefined                   NaA
+        null                        +0
+        Boolean                     1 if true; 0 if false
+        Number                      value of number
+        String                      parse the string to number. Return NaN if alphabetical
+        Object                      toNumber(toPrimitive(value))
 
-Type(x) == Type(y)          -> result
-null == undefined           -> true
-undefined == null           -> true
-Number == String            -> x == toNumber(y)
-String == Number            -> toNumber(x) == y
-Boolean == Any              -> toNumber(x) == y
-Any == Boolean              -> x == toNumber(y)
-String or Number == Object  -> x == toPrimitive(y)
-Object == String or Number  -> toPrimitive(x) == y
+    - toPrimitive()
+        Value Type                  Result
+        ----------------------------------------------------------------------------------
+        Object                      if valueOf() returns a primitive value, return the value
+                                    if toString() returns a primitive value, return the value
+                                    Otherwise, return an error
