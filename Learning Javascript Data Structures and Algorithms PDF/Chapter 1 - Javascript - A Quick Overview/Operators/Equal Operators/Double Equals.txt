@@ -1,0 +1,13 @@
+When using ==, values can be considered equal even when they are of different types
+
+The follow table represents the result when performing equality operations with double equals
+
+Type(x) == Type(y)          -> result
+null == undefined           -> true
+undefined == null           -> true
+Number == String            -> x == toNumber(y)
+String == Number            -> toNumber(x) == y
+Boolean == Any              -> toNumber(x) == y
+Any == Boolean              -> x == toNumber(y)
+String or Number == Object  -> x == toPrimitive(y)
+Object == String or Number  -> toPrimitive(x) == y
