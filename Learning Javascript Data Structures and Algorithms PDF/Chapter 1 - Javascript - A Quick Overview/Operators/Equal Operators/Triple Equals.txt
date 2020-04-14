@@ -1,0 +1,9 @@
+- Triple equals === operator always return false if the two values of different types are being compared
+- The following table demonstrate the comparison of values of the same type
+        Type(x)         Values                                      Result
+        -------------------------------------------------------------------
+        Number          x has the same value as y (but not NaN)     true
+        String          x and y are identical characters            true
+        Boolean         x and y are both true or both false         true
+        Object          x and y reference the same object           true
+        -------------------------------------------------------------------
