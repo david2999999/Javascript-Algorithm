@@ -10,3 +10,10 @@ console.log(framework);
 let language = 'JavaScript!'; //{1}
 let language = 'Ruby!'; // {2} - throws error
 console.log(language);
+
+// ES6 also introduce the keyword const. Its behavior is the same thing
+// as the keyword let; the only difference is that a variable defined as
+// const has a read-only value
+const PI = 3.141593;
+PI = 3.0; //throws error
+console.log(PI);
